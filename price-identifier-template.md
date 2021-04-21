@@ -1,6 +1,6 @@
 *An UMIP number will be assigned by an editor. When opening a pull request to submit your UMIP, please use an abbreviated title in the filename. The file name should follow this format - "umip_add_priceidentifiername_priceid.md". Please remove this and all italicized instructions before submitting your pr. All bolded fields should be filled in before submission.*
 
-## HEADERS
+## Headers
 
 | UMIP                |                                                               |
 | ------------------- | ------------------------------------------------------------- |
@@ -10,18 +10,20 @@
 | Created             | **Today's Date**                                              |
 | Discourse Link      | **Discourse Link**                                            |
 
-# SUMMARY 
+# Summary 
 
 The DVM should support price requests for **Price Identifier Name**. **Price Identifier name** reflects the **Summary of Price Identifier**.
 
 
-# MOTIVATION
+# Motivation
 
 *Please explain why you want to add this price identifier. What types of synthetics are you intending to create with this?*
 
-# MARKETS & DATA SOURCES
+# Data Specifications
 
 *How should voters access the data necessary to calculate the value of this price identifier? What specific markets should be referenced?*
+
+*If proposing multiple price identifiers, please add markets for each.*
 
 -----------------------------------------
 - Price identifier name: **First Price ID Name** 
@@ -31,7 +33,7 @@ The DVM should support price requests for **Price Identifier Name**. **Price Ide
 - Real-time price update frequency: **Frequency** - *60 seconds*
 - Historical price update frequency: **Frequency** - *5 minutes*
 
-# PRICE FEED IMPLEMENTATION
+# Price Feed Implementation
 
 *To allow for the creation of bots that can programmatically calculate prices off-chain to liquidate and dispute transactions, you must create a price feed following the UMA Protocol format (outlined below). This price feed is also necessary to calculate developer mining rewards.*
 
@@ -52,24 +54,26 @@ Existing price feeds include *Please remove before submission*:
 - [Quandl](https://github.com/UMAprotocol/protocol/blob/master/packages/financial-templates-lib/src/price-feed/QuandlPriceFeed.js)
 - [Any combination of these](https://github.com/UMAprotocol/protocol/blob/master/packages/financial-templates-lib/src/price-feed/ExpressionPriceFeed.js)
 
-# TECHNICAL SPECIFICATIONS
+# Technical Specifications
+
+*If proposing multiple price identifiers, please add technical specifications for each.*
 
 -----------------------------------------
-- Price identifier name: **First Price ID Name** 
-- Base Currency: **Markets & Pairs** - *Example: Binance ETH/USDT, Coinbase Pro ETH/USD*
-- Quote Currency: **Provider to use** - *Cryptowatch, TraderMade, Quandl, the Graph*
+- Price identifier name: **First Price ID Name** - *ETHUSD*
+- Base Currency: **BASE** - *ETH - May not apply if this is not a typical Base/Quote price*
+- Quote Currency: **QUOTE** - *USD - May not apply if this is not a typical Base/Quote price*
 - Rounding: *Round to 2 decimal places (third decimal place digit >= 5 rounds up and < 5 rounds down)*
 - Estimated current value of price identifier: *15.03*
 
-# RATIONALE
+# Rationale
 
 *The section should describe why price identifier design decisions were made, as well as any alternative designs that were considered.*
 
-# IMPLEMENTATION
+# Implementation
 
 *Describe how UMA tokenholders should arrive at the price in the case of a DVM price request. Document each step a voter should take to query for and return a price at a specific timestamp. This should include an example calculation where you pick a specific timestamp and calculate the price at that timestamp.*
 
-# Security considerations
+# Security Considerations
 
 Some optional questions to consider *Please remove before submission*:
 - How could price manipulation occur?
