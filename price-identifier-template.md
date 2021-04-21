@@ -2,7 +2,7 @@ Note that an UMIP number will be assigned by an editor. When opening a pull requ
 The title should be 44 characters or less.
 
 ## HEADERS
-| UMIP-[fileName]     |                                                                                                                                  |
+| UMIP- [fileName]     |                                                                                                                                  |
 |------------|------------------------------------------------------------------------------------------------------------------------------------------|
 | UMIP Title | [TITLE]                                                                                                  |
 | Authors    | [Name or username and email]
@@ -10,7 +10,7 @@ The title should be 44 characters or less.
 | Created    | [DATE] 
 | Link to Discourse    | [LINK]                                                                               
 
-[fileName]: ethusd-priceid
+[fileName]: ethusd priceid
 [TITLE]: Add ETHUSD as a price identifier
 [DATE]: 02-15-18
 [LINK]: https://discourse.umaproject.org/c/umips/18
