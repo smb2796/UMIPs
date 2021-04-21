@@ -39,18 +39,18 @@ The DVM should support price requests for **Price Identifier Name**. **Price Ide
 
 
 Existing price feeds include *Please remove before submission*:
-- Balancer
-- Uniswap/SushiSwap
-- CoinGecko
-- CoinMarketCap
-- CryptoWatch
-- DefiPulse
-- TraderMade Forex rates
-- ExchangeRate Forex rates
-- LP token prices
-- Vault token prices
-- Quandl
-- Any combination of these
+- [Balancer](https://github.com/UMAprotocol/protocol/blob/master/packages/financial-templates-lib/src/price-feed/BalancerPriceFeed.js)
+- [Uniswap/SushiSwap](https://github.com/UMAprotocol/protocol/blob/master/packages/financial-templates-lib/src/price-feed/UniswapPriceFeed.js)
+- [CoinGecko](https://github.com/UMAprotocol/protocol/blob/master/packages/financial-templates-lib/src/price-feed/CoinGeckoPriceFeed.js)
+- [CoinMarketCap](https://github.com/UMAprotocol/protocol/blob/master/packages/financial-templates-lib/src/price-feed/CoinMarketCapPriceFeed.js)
+- [CryptoWatch](https://github.com/UMAprotocol/protocol/blob/master/packages/financial-templates-lib/src/price-feed/CryptoWatchPriceFeed.js)
+- [DefiPulse](https://github.com/UMAprotocol/protocol/blob/master/packages/financial-templates-lib/src/price-feed/DefiPulsePriceFeed.js)
+- [TraderMade Forex rates](https://github.com/UMAprotocol/protocol/blob/master/packages/financial-templates-lib/src/price-feed/TraderMadePriceFeed.js)
+- [ExchangeRate Forex rates](https://github.com/UMAprotocol/protocol/blob/master/packages/financial-templates-lib/src/price-feed/ForexDailyPriceFeed.js)
+- [LP tokens](https://github.com/UMAprotocol/protocol/blob/master/packages/financial-templates-lib/src/price-feed/LPPriceFeed.js)
+- [Vault tokens](https://github.com/UMAprotocol/protocol/blob/master/packages/financial-templates-lib/src/price-feed/VaultPriceFeed.js)
+- [Quandl](https://github.com/UMAprotocol/protocol/blob/master/packages/financial-templates-lib/src/price-feed/QuandlPriceFeed.js)
+- [Any combination of these](https://github.com/UMAprotocol/protocol/blob/master/packages/financial-templates-lib/src/price-feed/ExpressionPriceFeed.js)
 
 # TECHNICAL SPECIFICATIONS
 
@@ -58,8 +58,8 @@ Existing price feeds include *Please remove before submission*:
 - Price identifier name: **First Price ID Name** 
 - Base Currency: **Markets & Pairs** - *Example: Binance ETH/USDT, Coinbase Pro ETH/USD*
 - Quote Currency: **Provider to use** - *Cryptowatch, TraderMade, Quandl, the Graph*
-- Rounding: *Round to 2 decimal places*
-- Current Value of Price Identifier: *15.03*
+- Rounding: *Round to 2 decimal places (third decimal place digit >= 5 rounds up and < 5 rounds down)*
+- Estimated current value of price identifier: *15.03*
 
 # RATIONALE
 
@@ -67,7 +67,7 @@ Existing price feeds include *Please remove before submission*:
 
 # IMPLEMENTATION
 
-Describe how UMA tokenholders should arrive at the price in the case of a DVM price request. Document each step a voter should take to query for and return a price at a specific timestamp. Include the following in the description:
+*Describe how UMA tokenholders should arrive at the price in the case of a DVM price request. Document each step a voter should take to query for and return a price at a specific timestamp. This should include an example calculation where you pick a specific timestamp and calculate the price at that timestamp.*
 
 # Security considerations
 
