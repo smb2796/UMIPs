@@ -40,7 +40,7 @@ The DVM should support price requests for **Price Identifier Name**. **Price Ide
 *If using existing price feeds from the [UMA protocol repo](https://github.com/UMAprotocol/protocol/tree/master/packages/financial-templates-lib/src/price-feed), please list the price feeds used and write a price feed configuration following the examples [here](https://github.com/UMAprotocol/protocol/blob/master/packages/financial-templates-lib/src/price-feed/DefaultPriceFeedConfigs.js).*
 
 
-Existing price feeds include *Please remove before submission*:
+Existing price feeds include: (*Please remove before submission*)
 - [Balancer](https://github.com/UMAprotocol/protocol/blob/master/packages/financial-templates-lib/src/price-feed/BalancerPriceFeed.js)
 - [Uniswap/SushiSwap](https://github.com/UMAprotocol/protocol/blob/master/packages/financial-templates-lib/src/price-feed/UniswapPriceFeed.js)
 - [CoinGecko](https://github.com/UMAprotocol/protocol/blob/master/packages/financial-templates-lib/src/price-feed/CoinGeckoPriceFeed.js)
@@ -75,7 +75,7 @@ Existing price feeds include *Please remove before submission*:
 
 # Security Considerations
 
-Some optional questions to consider *Please remove before submission*:
+Some optional questions to consider: (*Please remove before submission*)
 - How could price manipulation occur?
 - How could this price ID be exploited?
 - Do the instructions for determining the price provide people with enough certainty?
