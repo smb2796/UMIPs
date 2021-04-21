@@ -8,7 +8,7 @@
 | Authors             | **Name**                                                      |
 | Status              | Draft                                                         |
 | Created             | **Today's Date**                                              |
-| Discourse Link      | **Discourse Link**                                            |
+| Discourse Link      | **Create a post in [UMA's Discourse](https://discourse.umaproject.org/c/umips/18) and link here**            |
 
 # Summary 
 
