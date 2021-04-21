@@ -25,7 +25,7 @@ The DVM should support price requests for **Price Identifier Name**. **Price Ide
 
 -----------------------------------------
 - Price identifier name: **First Price ID Name** 
-- Markets & Pairs: **Markets & Pairs** - *Example: Binance ETH/USDT, Coinbase Pro ETH/USD*
+- Markets & Pairs: **Markets & Pairs** - *Example: Binance ETH/USDT, Coinbase Pro ETH/USD. This might not apply to all price identifiers*
 - Example price providers: **Provider to use** - *Cryptowatch, TraderMade, Quandl, the Graph*
 - Cost to use: **Explanation or link to provider pricing plan**
 - Real-time price update frequency: **Frequency** - *60 seconds*
